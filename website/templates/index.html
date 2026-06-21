@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero-wrapper">
+    <div class="col-lg-6 hero-left">
+        <div class="hero-image-container w-100">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="img-fluid w-100" alt="Children in classroom">
+            <div class="hero-image-caption">Education & Support in Action</div>
+        </div>
+    </div>
+    <div class="col-lg-6 hero-right text-center text-md-start">
+        <div class="mx-auto" style="max-width: 85%;">
+            <h1 class="serif-font fw-bold mb-3">Empowering Lives.<br>Restoring Hope.<br>Together.</h1>
+            <p class="mb-4 text-muted fs-5">We work tirelessly to provide education, healthcare, and sustainable resources to underserved communities globally. Your support creates lasting change.</p>
+            <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                <a href="{{ url_for('donate') }}" class="btn btn-coral">Make an Impact</a>
+                <a href="#" class="btn btn-outline-green">Volunteer With Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="impact-tracker">
+    <div class="container text-center">
+        <h2 class="serif-font fw-bold mb-5">Impact Tracker</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3 impact-stat">
+                <h3>👥 15,000+</h3>
+                <p class="fw-bold mb-0">LIVES IMPACTED</p>
+            </div>
+            <div class="col-6 col-md-3 impact-stat">
+                <h3>25+</h3>
+                <p class="fw-bold mb-0">ACTIVE PROJECTS</p>
+            </div>
+            <div class="col-6 col-md-3 impact-stat">
+                <h3>❤️ 5,000+</h3>
+                <p class="fw-bold mb-0">DONORS</p>
+            </div>
+            <div class="col-6 col-md-3 impact-stat">
+                <h3>🤝 800+</h3>
+                <p class="fw-bold mb-0">VOLUNTEERS</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="featured-causes-section">
+    <div class="container">
+        <h2 class="serif-font fw-bold mb-4">Featured Causes</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card cause-card h-100">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Education">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="serif-font fw-bold">Education Fund</h4>
+                        <p class="text-muted small mb-1 flex-grow-1">We work tirelessly to provide education and sustainable resources and action.</p>
+                        
+                        <div class="cause-progress">
+                            <div class="progress-bar" style="width: 42%;"></div>
+                        </div>
+                        <p class="small mb-3"><strong>₹2,10,000</strong> <span class="text-muted">Raised of ₹5,00,000</span></p>
+                        
+                        <a href="{{ url_for('donate') }}" class="btn btn-coral w-100 mt-auto">Donate to This Cause</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card cause-card h-100">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Health">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="serif-font fw-bold">Health Services</h4>
+                        <p class="text-muted small mb-1 flex-grow-1">We work tirelessly to provide education, healthcare, and sustainable resources to..</p>
+                        
+                        <div class="cause-progress">
+                            <div class="progress-bar" style="width: 42%;"></div>
+                        </div>
+                        <p class="small mb-3"><strong>₹2,10,000</strong> <span class="text-muted">Raised of ₹5,00,000</span></p>
+                        
+                        <a href="{{ url_for('donate') }}" class="btn btn-coral w-100 mt-auto">Donate to This Cause</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card cause-card h-100">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Water">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="serif-font fw-bold">Clean Water Initiative</h4>
+                        <p class="text-muted small mb-1 flex-grow-1">Clean water initiative's water chalice to monitoring the wide community.</p>
+                        
+                        <div class="cause-progress">
+                            <div class="progress-bar" style="width: 42%;"></div>
+                        </div>
+                        <p class="small mb-3"><strong>₹2,10,000</strong> <span class="text-muted">Raised of ₹5,00,000</span></p>
+                        
+                        <a href="{{ url_for('donate') }}" class="btn btn-coral w-100 mt-auto">Donate to This Cause</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

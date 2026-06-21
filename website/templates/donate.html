@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 bg-white p-5 rounded shadow-sm border">
+        <h2 class="text-center text-success fw-bold mb-4">Support Leelanjani Maa Sanstha</h2>
+        <p class="text-center text-muted">Every small contribution brings a big smile. Choose how you would like to give back today.</p>
+        
+        <div class="row g-4 mt-3">
+            <div class="col-md-6">
+                <div class="card h-100 text-center border-success">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Bank Transfer</h4>
+                        <p class="card-text text-start text-muted sm">
+                            <strong>Bank:</strong> Example Bank India<br>
+                            <strong>Account Name:</strong> Leelanjani Maa Sanstha<br>
+                            <strong>A/C Number:</strong> 123456789012<br>
+                            <strong>IFSC Code:</strong> EXAM0001234
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 text-center border-warning">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Online Payment</h4>
+                        <p class="card-text text-muted">Scan our UPI ID to instantly donate via GPay, PhonePe, or Paytm.</p>
+                        <span class="badge bg-warning text-dark fs-5 py-2 px-3">lims@upi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
